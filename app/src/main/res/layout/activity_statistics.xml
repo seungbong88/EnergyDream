@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.energydream.AddConcentActivity$StatisticsFragment">
+    <RelativeLayout
+        android:id="@+id/waveBox"
+        android:layout_weight="0.4"
+        android:background="@drawable/design_main_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <me.itangqi.waveloadingview.WaveLoadingView
+            android:layout_centerHorizontal="true"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="20dp"
+            android:id="@+id/waveLoadingView"
+            app:wlv_progressValue="40"
+            >
+
+        </me.itangqi.waveloadingview.WaveLoadingView>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_below="@id/waveLoadingView"
+        android:text="내가아낀 전력량"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0.6"
+        >
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:id="@+id/buttonBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_venture_chart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venture"
+                android:textColor="#ffffff"
+                android:background="@drawable/design_statistic_botton_2"/>
+
+            <Button
+                android:id="@+id/btn_donation_chart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Donatino"
+                android:textColor="#000000"
+                android:background="@drawable/design_statistic_botton_1"
+                android:layout_toRightOf="@+id/btn_venture_chart"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:id="@+id/text_chart"
+            android:layout_below="@id/buttonBox"
+            android:text="우리지역은 "/>
+        <com.github.mikephil.charting.charts.BarChart
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_chart"
+        android:id="@+id/barchart"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+</RelativeLayout>
+
+</LinearLayout>

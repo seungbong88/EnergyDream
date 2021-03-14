@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <gradient
+        android:angle="90"
+        android:type="linear"
+        android:startColor="#381950"
+        android:centerColor="#29145b"
+        android:endColor="#022b85"/> <!--메인화면 가장 상위 컬러-->
+</shape>

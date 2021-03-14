@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentRight = "true"
+    android:background="@drawable/design_main_background"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+          <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.60"
+            android:padding="50dip"
+            android:id="@+id/navTop">
+
+            <ImageButton
+                android:layout_width="150dip"
+                android:layout_height="150dip"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/standypoweroff"
+                android:background="@android:color/transparent"
+                android:id="@+id/btn_checkisExist"
+                android:layout_margin="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_checkisExist"
+                android:id="@+id/checkText"
+                android:text="대기전력 안심"
+                android:textColor="#ffffff"
+                android:textSize="30dip"
+                android:layout_margin="15dip"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/navTop"
+        android:id="@+id/line1"
+        android:background="#70bdbdbd"/>
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.08"
+                android:layout_below="@+id/line1"
+                android:id="@+id/concent"
+                android:layout_centerHorizontal = "true"
+                android:layout_marginRight="70dip"
+                android:layout_marginLeft="70dip"
+                android:layout_marginTop="25dip"
+                android:layout_marginBottom="25dip"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:text="콘센트 전원"
+                    android:textSize="28dip" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="55dp"
+                    android:maxHeight="55dp"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/btn_elecOn"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/off"
+                    android:layout_alignParentRight="true"
+                    />
+
+        </RelativeLayout>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/concent"
+        android:id="@+id/line2"
+        android:background="#70bdbdbd"/>
+        <LinearLayout
+                android:id="@+id/record"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.32"
+                >
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:id="@+id/icon1">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="10dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/record_seed"
+                        android:src="@drawable/watt"/>
+                    <TextView
+                        android:layout_margin="1dip"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@+id/record_seed"
+                        android:layout_centerHorizontal="true"
+                        android:text="Watt"
+                        android:textColor="#ffffff"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/watt_t"/>
+                    <TextView
+                        android:layout_margin="1dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@+id/watt_t"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp"
+                        android:id="@+id/collect_watt"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="2dip"
+                    android:layout_height="match_parent"
+                    android:id="@+id/line3"
+                    android:background="#70bdbdbd"/>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginTop="13dp"
+                    android:layout_weight="0.5"
+                    android:id="@+id/icon2">
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/record_power"
+                        android:src="@drawable/save"
+                        />
+                    <TextView
+                        android:layout_margin="1dip"
+                        android:layout_width="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/record_power"
+                        android:layout_height="wrap_content"
+                        android:text="아낀 전력량"
+                        android:textColor="#ffffff"
+                        android:id="@+id/save_t"/>
+                    <TextView
+                        android:layout_margin="1dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@+id/save_t"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp"
+                        android:id="@+id/save_power"/>
+                </RelativeLayout>
+        </LinearLayout>
+</LinearLayout>

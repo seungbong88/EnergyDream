@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="actionBarStyle">@style/TranslucentActionBar</item>--> <!--상단바 투명 스타일-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>                  <!--NoTi-->
+        <item name="drawerArrowStyle">@style/DrawerIcon</item> <!--햄버거 색깔-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DrawerIcon" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">#000000</item>
+    </style>
+
+    <!--상단바 투명 스타일 // 위에 적용-->
+    <style name="TranslucentActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>

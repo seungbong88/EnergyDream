@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/mileage"
+        android:id="@+id/img_standydialog"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tx_milge_tx"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="마일리지를 적립했습니다."
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/tx_milge_tx"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_milge_tx"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:text="확인"
+        android:id="@+id/btn_milge"
+        android:background="@drawable/design_dialog_button"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

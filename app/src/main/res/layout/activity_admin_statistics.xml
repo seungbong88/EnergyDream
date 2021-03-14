@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.energydream.AdminStatisticsActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:id="@+id/collect_watt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:id="@+id/default_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/design_admin_statistics">
+
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/using_watt"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="사용가능한 WATT"
+                    android:textColor="#FFFFFF"
+                    android:background="#00FF0000"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/using_watt"
+                    android:text="총 모인 WATT"
+                    android:textColor="#FFFFFF"
+                    android:background="#00FF0000"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/default_name"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/design_admin_statistics_1">
+
+                <TextView
+                    android:id="@+id/availableMileage"
+                    android:layout_width="150dp"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:layout_height="wrap_content"
+                    android:background="#00FF0000"/>
+
+                <TextView
+                    android:id="@+id/totalMielage"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/availableMileage"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:background="#00FF0000"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/admin_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/collect_watt"
+            android:scrollbars="vertical" />
+    </RelativeLayout>
+
+
+
+</FrameLayout>
